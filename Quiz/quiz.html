@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Date Created: 8/21/19
+    Most recent revision: 8/28/19 2:00am
+-->
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Test</title>
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 	
+
+	</head>
+	<style>
+		
+		.title-box{
+			background-color:white;
+			padding:10px;
+			margin:10px;
+			margin-left:-20px;
+			border: 1px solid grey;
+			border-left:none;
+		}
+	
+		.test-body{
+			padding:30px;
+
+		}
+		
+		div#testResults table{
+			box-shadow: 2.5px 5px 8px grey;
+			text-align:center;
+		}
+		
+		div#testResults table thead{
+			font-size:1.5em;
+			background-color: lightsteelblue;
+		}
+		
+		div#testResults table td{
+			text-align: left;
+		}
+		
+		#qtimer{
+			box-shadow: 1.2px 2.5px 4px grey;
+			border-radius: 99em;
+			border: 3px solid #007bff;
+			text-align:center;
+			width:12%;
+		}
+		#qmins, #qsecs{
+			font-size:1.5em;
+		}
+	</style>
+	
+	<body>
+		<!-- Jumbotron-->
+		<header class="jumbotron shadow p-3 mb-5 rounded" >
+		<div class="row">
+				<div class="title-box d-inline-flex justify-content-center col-3">
+					<h1 id = "testh" class="display-5 "></h1>
+				</div>
+				<div class="mx-auto d-inline-flex justify-content-center col-6">
+					<a href="index.html"><img class="" src="yourlogo.png" alt="Your Logo" style="width:200px;"></a>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+		</header>
+		
+		<!-- Begining of body container-->
+		<div class="container">
+			<div id="qtimerBlock" class="d-flex justify-content-end">
+				<div id="qtimer" class="p-2">
+						<span id="qmins">00</span>:<span id="qsecs">00</span>
+				</div>
+			</div>
+				
+			<div class= "test-body mx-auto col-8 custom-validate shadow">
+									
+				<div id="instr">
+					<p> Click 'Start Test' when you're ready to begin </p>
+					
+					<hr/>
+					<button id="srtbtn" class="btn btn-primary"> Start Test</button>
+				</div>
+				
+				<form id= "testForm" ></form>
+				 
+			</div>
+			<div id="testResults" class= "mx-auto col-8"></div>
+			
+			<div class="back-b mx-auto col-8 p-3">
+				<a href="index.html">Back to Tests</a>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="quiz.js"></script>
+	</body>
+	
+</html>
